@@ -1,10 +1,12 @@
+
+
 var TelegramBot = require('node-telegram-bot-api');
 var token = '120468813:AAHeg2aGmnzXdzeRIem-TBjnCTkX9HHxkVM';
-var RestaurantArray = ["На Поляне",
-"Денис Давыдовъ",
-"Столовая RT",
-"Бодрум",
-"Ташкент"];
+var RestaurantArray = ["РќР° РїРѕР»СЏРЅРµ",
+"Р”РµРЅРёСЃ Р”Р°РІС‹РґРѕРІСЉ",
+"РЎС‚РѕР»РѕРІР°СЏ RT",
+"РўР°С€РєРµРЅС‚",
+"Р‘РѕРґСЂСѓРј"];
 
 var PutinStickerArray = ["BQADAgADuQMAAjq5FQJZfuBnaRaTbwI",
 "BQADAgADtwMAAjq5FQLUee55WTCS8QI",
@@ -57,6 +59,10 @@ bot.on('message', function (msg) {
 	var randSticker = PutinStickerArray[Math.floor(Math.random() * PutinStickerArray.length)];
 	var randRest = RestaurantArray[Math.floor(Math.random() * RestaurantArray.length)];
     console.log(msg);
-    bot.sendMessage(chatId, "Сегодня выиграл ресторан "+randRest, {caption: "This is Dalet Bot from RT"});
-	bot.sendSticker(chatId, randSticker);
+	//var myString = "Сегодня выиграл ресторан "+randRest;
+	// myString = JSON.parse( JSON.stringify( myString ) )
+    bot.sendSticker(chatId, randSticker);
+	bot.sendMessage(chatId, "РЎРµРіРѕРґРЅСЏ РїСЂРµРґР»Р°РіР°РµС‚СЃСЏ РїРѕСЃРµС‚РёС‚СЊ "+randRest , {caption: "This is Dalet Bot from RT"});
+	// bot.sendMessage(chatId, msg.text , {caption: "This is Dalet Bot from RT"});
+	
 });
