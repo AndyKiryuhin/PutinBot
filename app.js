@@ -1,7 +1,9 @@
 
 
 var TelegramBot = require('node-telegram-bot-api');
-var token = '120468813:AAHeg2aGmnzXdzeRIem-TBjnCTkX9HHxkVM';
+// var token = '120468813:AAHeg2aGmnzXdzeRIem-TBjnCTkX9HHxkVM';
+
+var token = '120565725:AAEalgLPaVIHFSYngYnOO6-W-pTwvrRNXwI';
 var RestaurantArray = ["На поляне",
 "Денис Давыдовъ",
 "Столовая RT",
