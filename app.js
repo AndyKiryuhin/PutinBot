@@ -3,7 +3,7 @@
 var TelegramBot = require('node-telegram-bot-api');
 // var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
 
-var token = '120565725:AAEalgLPaVIHFSYngYnOO6-W-pTwvrRNXwI';
+var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
 var RestaurantArray = ["На поляне",
 "Денис Давыдовъ",
 "Столовая RT",
