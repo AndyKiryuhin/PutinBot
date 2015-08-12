@@ -1,7 +1,7 @@
 
 
 var TelegramBot = require('node-telegram-bot-api');
-// var token = '120468813:AAHeg2aGmnzXdzeRIem-TBjnCTkX9HHxkVM';
+// var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
 
 var token = '120565725:AAEalgLPaVIHFSYngYnOO6-W-pTwvrRNXwI';
 var RestaurantArray = ["На поляне",
@@ -64,7 +64,7 @@ bot.on('message', function (msg) {
 	//var myString = "������� ������� �������� "+randRest;
 	// myString = JSON.parse( JSON.stringify( myString ) )
     bot.sendSticker(chatId, randSticker);
-	bot.sendMessage(chatId, "Сегодня предлагается посетить "+randRest , {caption: "This is Dalet Bot from RT"});
+	//bot.sendMessage(chatId, "Сегодня предлагается посетить "+randRest , {caption: "This is Dalet Bot from RT"});
 	// bot.sendMessage(chatId, msg.text , {caption: "This is Dalet Bot from RT"});
 	
 });
