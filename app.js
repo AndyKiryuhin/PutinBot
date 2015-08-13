@@ -4,6 +4,10 @@ var TelegramBot = require('node-telegram-bot-api');
 // var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
 
 var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
+var botantoken = '80701';
+var botan = require('botanio')(botantoken);
+
+
 var RestaurantArray = ["На поляне",
 "Денис Давыдовъ",
 "Столовая RT",
@@ -64,6 +68,8 @@ bot.on('message', function (msg) {
 	//var myString = "������� ������� �������� "+randRest;
 	// myString = JSON.parse( JSON.stringify( myString ) )
     bot.sendSticker(chatId, randSticker);
+	
+	botan.track(message, 'Start');
 	//bot.sendMessage(chatId, "Сегодня предлагается посетить "+randRest , {caption: "This is Dalet Bot from RT"});
 	// bot.sendMessage(chatId, msg.text , {caption: "This is Dalet Bot from RT"});
 	
