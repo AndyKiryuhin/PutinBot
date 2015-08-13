@@ -4,7 +4,7 @@ var TelegramBot = require('node-telegram-bot-api');
 // var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
 
 var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
-var botantoken = '80701';
+var botantoken = '81096';
 var botan = require('botanio')(botantoken);
 
 
@@ -69,7 +69,7 @@ bot.on('message', function (msg) {
 	// myString = JSON.parse( JSON.stringify( myString ) )
     bot.sendSticker(chatId, randSticker);
 	
-	botan.track(message, 'Start');
+	botan.track(msg, 'Start');
 	//bot.sendMessage(chatId, "Сегодня предлагается посетить "+randRest , {caption: "This is Dalet Bot from RT"});
 	// bot.sendMessage(chatId, msg.text , {caption: "This is Dalet Bot from RT"});
 	
