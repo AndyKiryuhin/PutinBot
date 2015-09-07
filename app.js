@@ -68,8 +68,8 @@ bot.on('message', function (msg) {
 	//var myString = "Сегодня выиграл ресторан "+randRest;
 	// myString = JSON.parse( JSON.stringify( myString ) )
     bot.sendSticker(chatId, randSticker);
-	
-	botan.track(msg, 'Start');
+	console.log(randSticker);
+		botan.track(msg, 'Start');
 	//bot.sendMessage(chatId, "РЎРµРіРѕРґРЅСЏ РїСЂРµРґР»Р°РіР°РµС‚СЃСЏ РїРѕСЃРµС‚РёС‚СЊ "+randRest , {caption: "This is Dalet Bot from RT"});
 	// bot.sendMessage(chatId, msg.text , {caption: "This is Dalet Bot from RT"});
 	
