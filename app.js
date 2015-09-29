@@ -18,7 +18,10 @@ var PutinNicks = ["Путин",
 "Владимир",
 "Владимирович",
 "ВВП",
-"президент"];
+"Putin",
+"Vladimir",
+"Крым",
+"президент",];
 
 var PutinStickerArray = ["BQADAgADuQMAAjq5FQJZfuBnaRaTbwI",
 "BQADAgADtwMAAjq5FQLUee55WTCS8QI",
