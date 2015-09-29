@@ -14,6 +14,12 @@ var RestaurantArray = ["На поляне",
 "Ташкент",
 "Бодрум"];
 
+var PutinNicks = ["Путин",
+"Владимир",
+"Владимирович",
+"ВВП",
+"президент"];
+
 var PutinStickerArray = ["BQADAgADuQMAAjq5FQJZfuBnaRaTbwI",
 "BQADAgADtwMAAjq5FQLUee55WTCS8QI",
 "BQADAgADuwMAAjq5FQLtCYM50dXJZwI",
@@ -62,15 +68,34 @@ var bot = new TelegramBot(token, {polling: true});
 
 bot.on('message', function (msg) {
     var chatId = msg.chat.id;
+	var chatText = msg.text;
+	var PutinExist ;
 	var randSticker = PutinStickerArray[Math.floor(Math.random() * PutinStickerArray.length)];
 	var randRest = RestaurantArray[Math.floor(Math.random() * RestaurantArray.length)];
     console.log(msg);
+	console.log(chatText);
+	
 	//var myString = "������� ������� �������� "+randRest;
 	// myString = JSON.parse( JSON.stringify( myString ) )
+   	PutinNicks.forEach(function(entry) {
+    PutinExist = chatText.toUpperCase().match(entry.toUpperCase());
+	console.log(PutinExist);
+	if (PutinExist != null)	{StickerSend()}
+	// console.log(entry);
+	
+	function StickerSend() { // функция отправки стикера
     bot.sendSticker(chatId, randSticker);
 	console.log("Sticker send:" + randSticker);
 		botan.track(msg, 'Start');
 	//bot.sendMessage(chatId, "Сегодня предлагается посетить "+randRest , {caption: "This is Dalet Bot from RT"});
 	// bot.sendMessage(chatId, msg.text , {caption: "This is Dalet Bot from RT"});
+        
+
+}
+});
+	
+
+
+	
 	
 });
