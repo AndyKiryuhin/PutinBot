@@ -3,7 +3,11 @@
 var TelegramBot = require('node-telegram-bot-api');
 // var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
 
-var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
+
+// var token = '110363325:AAG54DEncwixij-GyjcI3zP9iJMdpUv2dnE';
+
+var token = '104688485:AAHHA90ZpFBx2j6r6qP764RaTyP3MNDvJyk';
+
 var botantoken = '81096';
 var botan = require('botanio')(botantoken);
 
@@ -21,7 +25,9 @@ var PutinNicks = ["РџСѓС‚РёРЅ",
 "Putin",
 "Vladimir",
 "РљСЂС‹Рј",
-"РїСЂРµР·РёРґРµРЅС‚",];
+"РїСЂРµР·РёРґРµРЅС‚",
+"РІР»Р°СЃС‚СЊ",
+"СЃРёР»Р°"];
 
 var PutinStickerArray = ["BQADAgADuQMAAjq5FQJZfuBnaRaTbwI",
 "BQADAgADtwMAAjq5FQLUee55WTCS8QI",
@@ -78,7 +84,7 @@ bot.on('message', function (msg) {
     console.log(msg);
 	console.log(chatText);
 	
-	//var myString = "Сегодня выиграл ресторан "+randRest;
+	//var myString = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+randRest;
 	// myString = JSON.parse( JSON.stringify( myString ) )
    	PutinNicks.forEach(function(entry) {
     PutinExist = chatText.toUpperCase().match(entry.toUpperCase());
